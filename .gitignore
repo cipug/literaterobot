@@ -9,9 +9,6 @@
 /data
 .~*
 common/CACHE
-literaterobot/media/images/*
-literaterobot/settings/local.py
-literaterobot
 __pycache__
 .vagrant/
 /.vagrant/
