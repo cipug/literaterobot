@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "eeef056f46562dfd5d167ad588b123d50896dade89bec222fc6db17f7be840be"
+            "sha256": "ae568b0ecac6c7efff065ddce246f5fd1d269aab522ceb5d19e19f20ca7d452d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -40,11 +40,11 @@
         },
         "django": {
             "hashes": [
-                "sha256:4d23f61b26892bac785f07401bc38cbf8fa4cec993f400e9cd9ddf28fd51c0ea",
-                "sha256:6e974d4b57e3b29e4882b244d40171d6a75202ab8d2402b8e8adbd182e25cf0c"
+                "sha256:16a5d54411599780ac9dfe3b9b38f90f785c51259a584e0b24b6f14a7f69aae8",
+                "sha256:9a2f98211ab474c710fcdad29c82f30fc14ce9917c7a70c3682162a624de4035"
             ],
             "index": "pypi",
-            "version": "==2.2.3"
+            "version": "==2.2.4"
         },
         "django-modelcluster": {
             "hashes": [
@@ -130,10 +130,10 @@
         },
         "pytz": {
             "hashes": [
-                "sha256:303879e36b721603cc54604edcac9d20401bdbe31e1e4fdee5b9f98d5d31dfda",
-                "sha256:d747dd3d23d77ef44c6a3526e274af6efeb0a6f1afd5a69ba4d5be4098c8e141"
+                "sha256:26c0b32e437e54a18161324a2fca3c4b9846b74a8dccddd843113109e1116b32",
+                "sha256:c894d57500a4cd2d5c71114aaab77dbab5eabd9022308ce5ac9bb93a60a6f0c7"
             ],
-            "version": "==2019.1"
+            "version": "==2019.2"
         },
         "requests": {
             "hashes": [
@@ -172,11 +172,11 @@
         },
         "wagtail": {
             "hashes": [
-                "sha256:6213d91d0624d62723fdd2c8c88c5b2b96a6e5a301b742b305c40a674286172c",
-                "sha256:aa4371d3e6feba01bbb1c48a6ed2569c4aa6b3f715971827c6ca1a68afda0f60"
+                "sha256:07e3adb1a3ed3385a803257859482c364a7fb37929b22a214e5a93df0725b402",
+                "sha256:6fe4f9438e48fdb56b9446a219b4276345ced49099521f90ae500e21665bae08"
             ],
             "index": "pypi",
-            "version": "==2.5.1"
+            "version": "==2.5.2"
         },
         "webencodings": {
             "hashes": [
