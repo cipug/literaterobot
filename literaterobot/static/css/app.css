@@ -1,0 +1,426 @@
+
+#engadget-footer-sitemap-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+    background-color: #0a0a0a;
+  }
+  
+  #engadget-footer-sitemap-container #engadget-footer-sitemap {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    color: #e6e6e6;
+    padding: 3.75rem 0;
+  }
+  
+  #engadget-footer-sitemap-container #engadget-footer-sitemap::before, #engadget-footer-sitemap-container #engadget-footer-sitemap::after {
+    display: table;
+    content: ' ';
+    -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  
+  #engadget-footer-sitemap-container #engadget-footer-sitemap::after {
+    clear: both;
+  }
+  
+  #engadget-footer-sitemap-container #engadget-footer-sitemap a {
+    color: #e6e6e6 !important;
+  }
+  
+  #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column {
+    float: left;
+    width: 50%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:nth-of-type(1n) {
+    clear: none;
+  }
+  
+  #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:nth-of-type(2n+1) {
+    clear: both;
+  }
+  
+  #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:last-child {
+    float: left;
+  }
+  
+  @media print, screen and (min-width: 64em) {
+    #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column {
+      float: left;
+      width: 25%;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 64em) and (min-width: 40em) {
+    #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 64em) {
+    #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:nth-of-type(1n) {
+      clear: none;
+    }
+    #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:nth-of-type(4n+1) {
+      clear: both;
+    }
+    #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column:last-child {
+      float: left;
+    }
+  }
+  
+  #engadget-footer-sitemap-container #engadget-footer-sitemap .links .link-column:not(:last-child) {
+    border-right: 1px solid #e6e6e6;
+  }
+  
+  #engadget-footer-social-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+    background-color: #8a8a8a;
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    color: #e6e6e6;
+    padding: 3.75rem 0;
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social::before, #engadget-footer-social-container #engadget-footer-social::after {
+    display: table;
+    content: ' ';
+    -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social::after {
+    clear: both;
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social a {
+    color: #e6e6e6 !important;
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social .footer-left {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-social-container #engadget-footer-social .footer-left {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social .footer-left:last-child:not(:first-child) {
+    float: right;
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-social-container #engadget-footer-social .footer-left {
+      width: 50%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 40em) and (min-width: 40em) {
+    #engadget-footer-social-container #engadget-footer-social .footer-left {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-social-container #engadget-footer-social .footer-left:last-child:not(:first-child) {
+      float: right;
+    }
+  }
+  
+  @media print, screen and (min-width: 64em) {
+    #engadget-footer-social-container #engadget-footer-social .footer-left {
+      width: 41.66667%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 64em) and (min-width: 40em) {
+    #engadget-footer-social-container #engadget-footer-social .footer-left {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 64em) {
+    #engadget-footer-social-container #engadget-footer-social .footer-left:last-child:not(:first-child) {
+      float: right;
+    }
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social .footer-left .input-group-field {
+    background: #fefefe;
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social .footer-right {
+    text-align: right;
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-social-container #engadget-footer-social .footer-right {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social .footer-right:last-child:not(:first-child) {
+    float: right;
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-social-container #engadget-footer-social .footer-right {
+      width: 50%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 40em) and (min-width: 40em) {
+    #engadget-footer-social-container #engadget-footer-social .footer-right {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-social-container #engadget-footer-social .footer-right:last-child:not(:first-child) {
+      float: right;
+    }
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social .fa {
+    padding: 0 0 0 0.6rem;
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social h2 {
+    color: #fefefe;
+  }
+  
+  #engadget-footer-social-container #engadget-footer-social p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+  
+  #engadget-footer-contact-details-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+    background-color: #fefefe;
+  }
+  
+  #engadget-footer-contact-details-container #engadget-footer-contact-details {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    color: #8a8a8a;
+    padding: 1.25rem 0;
+  }
+  
+  #engadget-footer-contact-details-container #engadget-footer-contact-details::before, #engadget-footer-contact-details-container #engadget-footer-contact-details::after {
+    display: table;
+    content: ' ';
+    -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  
+  #engadget-footer-contact-details-container #engadget-footer-contact-details::after {
+    clear: both;
+  }
+  
+  #engadget-footer-contact-details-container #engadget-footer-contact-details a {
+    color: #8a8a8a !important;
+  }
+  
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left:last-child:not(:first-child) {
+    float: right;
+  }
+  
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left li {
+    display: block;
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+      width: 50%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      text-align: left;
+    }
+  }
+  
+  @media print, screen and (min-width: 40em) and (min-width: 40em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left:last-child:not(:first-child) {
+      float: right;
+    }
+  }
+  
+  @media print, screen and (min-width: 64em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+      width: 66.66667%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 64em) and (min-width: 40em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 64em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left:last-child:not(:first-child) {
+      float: right;
+    }
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left ul {
+      margin-bottom: 0;
+    }
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left li {
+      display: inline-block;
+    }
+  }
+  
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-left .fa {
+    padding: 0 0.4rem;
+  }
+  
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+    font-size: 0.9rem;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+      display: none !important;
+    }
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+      width: 50%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 40em) and (min-width: 40em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right:last-child:not(:first-child) {
+      float: right;
+    }
+  }
+  
+  @media print, screen and (min-width: 64em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+      width: 33.33333%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      text-align: right;
+    }
+  }
+  
+  @media print, screen and (min-width: 64em) and (min-width: 40em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+  
+  @media print, screen and (min-width: 64em) {
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right:last-child:not(:first-child) {
+      float: right;
+    }
+    #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right ul {
+      padding-top: 1.6rem;
+    }
+  }
+  
+  #engadget-footer-contact-details-container #engadget-footer-contact-details .footer-right .fa {
+    padding: 0 0.4rem;
+  }
+  
+  
