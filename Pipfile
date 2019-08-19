@@ -7,8 +7,8 @@ verify_ssl = true
 pylint = "*"
 
 [packages]
-wagtail = ">=2.5,<2.6"
 Django = "<2.3,>=2.2"
+wagtail = "~=2.6"
 
 [requires]
 python_version = "3.7"
