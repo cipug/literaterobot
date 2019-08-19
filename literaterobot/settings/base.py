@@ -27,6 +27,8 @@ INSTALLED_APPS = [
     'home',
     'search',
     'events',
+    'menus',
+
     
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
