@@ -16,3 +16,4 @@ __pycache__
 !.gitignore
 
 \.vscode/
+db.sqlite3
