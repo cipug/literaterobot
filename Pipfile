@@ -9,6 +9,7 @@ pylint = "*"
 [packages]
 Django = "<2.3,>=2.2"
 wagtail = "~=2.6"
+django-extensions = "*"
 
 [requires]
 python_version = "3.7"
