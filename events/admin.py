@@ -11,7 +11,7 @@ class EventAdmin(ModelAdmin):
     menu_order = 290
     add_to_settings_menu = False
     exclude_from_explorer=False
-    list_display = ("date","place")
+    list_display = ("title","date","place")
     search_fields = ("date", "place")
 
 modeladmin_register(EventAdmin)
