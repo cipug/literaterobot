@@ -13,6 +13,7 @@ class EventIndexPage(Page):
     ]
 
 class EventPage(Page):
+
     date = models.DateField("Event date")
     place = models.CharField(max_length=250)
     agenda = RichTextField(blank=True)
