@@ -19,6 +19,11 @@
 
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/literaterobot.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/foundation.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
+        <script type="text/javascript" src="{% static 'js/foundation.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+        <script src="https://kit.fontawesome.com/ccedf08f59.js"></script>
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -26,10 +31,100 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
+            <div class="grid-container full">
 {% load wagtailuserbar %}
 {% wagtailuserbar %}
-
+<div class="grid-x grid-margin-x">
+        <div class="medium-3 large-3 cell">Test</div>
+        <div class="medium-6 large-6 cell">
         {% block content %}{% endblock %}
+        </div>
+        <div class="medium-3 large-3 cell"></div>
+    </div>
+        <div id="engadget-footer-sitemap-container">
+            <footer id="engadget-footer-sitemap">
+              <div class="links">
+                <div class="link-column">
+                  <ul class="menu vertical">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a href="#">Four</a></li>
+                  </ul>
+                </div>
+                <div class="link-column">
+                  <ul class="menu vertical">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a href="#">Four</a></li>
+                  </ul>
+                </div>
+                 <div class="link-column">
+                  <ul class="menu vertical">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a href="#">Four</a></li>
+                  </ul>
+                </div>
+                <div class="link-column">
+                  <ul class="menu vertical">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a href="#">Four</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+          </div>
+          <div id="engadget-footer-social-container">
+              <footer id="engadget-footer-social">
+                  <div class="footer-left">
+                      <div class="newsletter">
+                          <h6>Sign up for our newsletter</h6>
+                          <div class="input-group">
+          
+                              <input class="input-group-field" type="email" placeholder="Email address">
+                              <div class="input-group-button">
+                                  <input type="submit" class="button" value="Submit">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="footer-right">
+                      <h6>Follow us</h6>
+                      <i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i>
+                      <i class="fab fa-twitter-square fa-3x" aria-hidden="true"></i>
+                      <i class="fab fa-google-plus-square fa-3x" aria-hidden="true"></i>
+                      <i class="fab fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                  </div>
+              </footer>
+          </div>
+          <div id="engadget-footer-contact-details-container">
+              <footer id="engadget-footer-contact-details">
+                  <div class="footer-left">
+                      <div class="contact-details">
+                          <ul>
+                              <li><img class="thumbnail" src="http://placehold.it/80"></li>
+                              <li><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 01234 567890</li>
+                              <li><a data-toggle="animatedModal10"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact us</a></li>
+                              <li><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Street, City, County, Country</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="footer-right">
+                      <ul class="menu align-right">
+                          <li><a href="#">One</a></li>
+                          <li><a href="#">Two</a></li>
+                          <li><a href="#">Three</a></li>
+                          <li><a href="#">Four</a></li>
+                      </ul>
+                  </div>
+              </footer>
+          </div>
+          </div>
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/literaterobot.js' %}"></script>
