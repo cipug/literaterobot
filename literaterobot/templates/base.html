@@ -33,33 +33,31 @@
 
     <body class="{% block body_class %}{% endblock %}">
 
-            <div class="grid-y grid-full">
+        <div class="grid-y grid-full">
             <div class ="grid-x grid-padding-x grid-padding-y">
-            <div class="cell large-12 medium-8">
-            <nav>
-            <ul class="menu menu-hover-lines">
-            {% for item in navigation.menu_items.all%}
-  <li {% if page.url == item.link %}class="active"{% endif %}><a href="{{item.link}}">{{item.title}}</a</li>
-{% endfor %}
-</ul>
-
-
-            </nav>
+                <div class="cell large-12 medium-8">
+                    <nav>
+                        <ul class="menu menu-hover-lines">
+                        {% for item in navigation.menu_items.all%}
+                            <li {% if page.url == item.link %}class="active"{% endif %}><a href="{{item.link}}">{{item.title}}</a></li>
+                        {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
             </div>
+            {% load wagtailuserbar %}
+            {% wagtailuserbar %}
+            <div class="grid-x grid-margin-x">
+                <div class="medium-3 large-3 cell"></div>
+                <div class="medium-6 large-6 cell">
+                    {% block content %}{% endblock %}
+                </div>
+
             </div>
-{% load wagtailuserbar %}
-{% wagtailuserbar %}
-<div class="grid-x grid-margin-x">
-        <div class="medium-3 large-3 cell"></div>
-        <div class="medium-6 large-6 cell">
-        {% block content %}{% endblock %}
-        </div>
 
-    </div>
-
-          <div id="engadget-footer-social-container">
-              <footer id="engadget-footer-social">
-                  <div class="footer-left">
+            <div id="engadget-footer-social-container">
+                <footer id="engadget-footer-social">
+                    <div class="footer-left">
                       <div class="newsletter">
                           <h6>Sign up for our newsletter</h6>
                           <div class="input-group">
