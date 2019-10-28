@@ -33,7 +33,6 @@
 
     <body class="{% block body_class %}{% endblock %}">
 
-<<<<<<< HEAD
             <div class="grid-y grid-full">
             <div class ="grid-x grid-padding-x grid-padding-y">
             <div class="cell large-12 medium-8">
@@ -48,14 +47,6 @@
             </nav>
             </div>
             </div>
-=======
-            <div class="grid-container full">
-            <nav><ul>
-            {% for item in navigation.menu_items.all%}
-            <li><a href="{{item.link}}">{{item.title}}</a></li>
-            {% endfor %}</ul>
-            </nav>
->>>>>>> a0b93a363db552f8728d7f018cbcae1fd5534c5e
 {% load wagtailuserbar %}
 {% wagtailuserbar %}
 <div class="grid-x grid-margin-x">
@@ -63,52 +54,9 @@
         <div class="medium-6 large-6 cell">
         {% block content %}{% endblock %}
         </div>
-<<<<<<< HEAD
 
     </div>
 
-=======
-        <div class="medium-3 large-3 cell"></div>
-    </div>
-        <div id="engadget-footer-sitemap-container">
-            <footer id="engadget-footer-sitemap">
-              <div class="links">
-                <div class="link-column">
-                  <ul class="menu vertical">
-                    <li><a href="#">One</a></li>
-                    <li><a href="#">Two</a></li>
-                    <li><a href="#">Three</a></li>
-                    <li><a href="#">Four</a></li>
-                  </ul>
-                </div>
-                <div class="link-column">
-                  <ul class="menu vertical">
-                    <li><a href="#">One</a></li>
-                    <li><a href="#">Two</a></li>
-                    <li><a href="#">Three</a></li>
-                    <li><a href="#">Four</a></li>
-                  </ul>
-                </div>
-                 <div class="link-column">
-                  <ul class="menu vertical">
-                    <li><a href="#">One</a></li>
-                    <li><a href="#">Two</a></li>
-                    <li><a href="#">Three</a></li>
-                    <li><a href="#">Four</a></li>
-                  </ul>
-                </div>
-                <div class="link-column">
-                  <ul class="menu vertical">
-                    <li><a href="#">One</a></li>
-                    <li><a href="#">Two</a></li>
-                    <li><a href="#">Three</a></li>
-                    <li><a href="#">Four</a></li>
-                  </ul>
-                </div>
-              </div>
-            </footer>
-          </div>
->>>>>>> a0b93a363db552f8728d7f018cbcae1fd5534c5e
           <div id="engadget-footer-social-container">
               <footer id="engadget-footer-social">
                   <div class="footer-left">
