@@ -1,5 +1,7 @@
 # Literate Robot
 
+Test amendment.
+
 A collaborative project from the CI Python User Group. Based on Wagtail CMS, Literate Robot is a working title for a lightweight, flexible publishing platform that can be used for singular or collective writing with (hopefully) the best qualities of a wiki and a modern CMS rolled into one.
 
 ## Get Involved
