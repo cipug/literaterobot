@@ -1,0 +1,84 @@
+= 2019-06-26 June Jersey Meetup =
+
+17:30 - Unit 13, Le Capelain House, Castle Quay [[https://www.google.com/maps/@49.1824762,-2.1155164,20z|Map]]
+
+== Notes ==
+ 
+4 attendees
+
+Again thanks to CIPUG founding member Phil for providing space for this month's meet up.
+
+Mark did an Anvil demo after researching the framework and speaking with the developers:
+
+ 1. It does take time to build web applications and do front end development in Python
+
+ 2. Flask and Django great but both have learning curves and pros and cons
+
+ 3. Use Anvil to both prototype and also production applications
+
+ 4. Community already has built templates using libraries such as Plotly for data representation
+
+ 5. Drag and drop to wireframe then get under the hood with the code to customise and functionalise the application
+
+ 6. Free version has some good functionality but some limitations such as Python 2.
+
+ 7. Well worth having this in your skill repertoire to get applications up and running quickly
+
+Phil did a demo of a classic car data project which generated discussion on the various elements throughout the demo and covered:
+
+ * Beautiful soup - for web scraping.
+
+ * Safari developer tools to inspect page elements and discover APIs
+
+ * Interrogate API with Postman
+
+ * JSON structure same as a Python dictionary therefore can index through without much additional knowledge of JSON!
+
+ * Used Atom as IDE for project, developed by GitHub, now owned by Microsoft, as is VS Code.
+
+ * Used Pretty JSON  (Mark recommended pprint library)
+
+ * DynamoDB. No sql databases. Good to store and interrogate JSON data.
+
+ * AWS Boto3 is the AWS Python SDK
+
+ * Bonhams classic card auction database has 38000 records since 2003!
+
+ * Data cleaning -  as data fields are used for different purposes over the years therefore inconsistent and difficult to clean.
+
+ * Dataquest for learning data cleansing (thanks Dave) and regular expressions. Regex 101 to test statements (thanks again Dave!).
+
+ * Build and test functions in Jupyter then lift over to .py script.
+
+ * Rebuilt workflow for a AWS Lambda function to check database every day.
+
+ * Converting fx rates using CSV data from US Fed using request library.
+
+ * String library and punctuation module.
+
+ * My SQL Workbench from Oracle to see database and build SQL queries.
+
+ * Exploring data with tableau (quick demo of Tableau).
+
+ * Lambda functions in Aws runs the python scripts everyday.
+
+ * It is in github
+
+ * How to hide credentials in code in GitHub?
+
+ * Discussed use cases for data and discussed reasons why perhaps Bonhams not using their own data (data consistency, cleanliness etc)?
+
+ * Discussed whether there is a common language for these kinds of get requests
+
+ * Quick discussion of the re library (regex)
+
+ * Quick discussion on NoSQL vs SQL database
+
+== Resources ==
+
+ * [[https://anvil.works/|Anvil]]
+ * [[https://www.getpostman.com/|Postman]]
+ * [[https://www.crummy.com/software/BeautifulSoup/|Beautiful Soup]]
+ * [[https://www.dataquest.io/|Data Quest]]
+ * [[https://docs.python.org/3/library/re.html|Python Regular Expressions]]
+ * [[https://regex101.com/|Regex 101]]
