@@ -23,8 +23,6 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/literaterobot.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/foundation.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
-        <script type="text/javascript" src="{% static 'js/foundation.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
         <script src="https://kit.fontawesome.com/ccedf08f59.js"></script>
 
         {% block extra_css %}
@@ -102,6 +100,8 @@
           </div>
 
         {# Global javascript #}
+        <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/foundation.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/literaterobot.js' %}"></script>
 
         {% block extra_js %}
