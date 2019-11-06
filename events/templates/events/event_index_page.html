@@ -14,7 +14,7 @@
     {% for event in page.get_children %}
         {% with event=event.specific %}
             <h2><a href="{% pageurl event %}">{{ event.title }}</a></h2>
-            <p>Place: {{ event.place }}</p>
+            <p>At: {{ event.place }} on {{ event.date }}</p>
             <p>Agenda: {{ event.agenda|richtext }}</p>
         {% endwith %}
     {% endfor %}
