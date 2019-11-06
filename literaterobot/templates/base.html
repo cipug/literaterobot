@@ -1,5 +1,6 @@
 {% load static wagtailuserbar menu_tags %}
 {% get_menu "main-nav" as navigation %}
+{% get_menu "footer-nav" as footernavigation %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -22,8 +23,6 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/literaterobot.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/foundation.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}">
-        <script type="text/javascript" src="{% static 'js/foundation.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
         <script src="https://kit.fontawesome.com/ccedf08f59.js"></script>
 
         {% block extra_css %}
@@ -91,10 +90,9 @@
                   </div>
                   <div class="footer-right">
                       <ul class="menu align-right">
-                          <li><a href="#">One</a></li>
-                          <li><a href="#">Two</a></li>
-                          <li><a href="#">Three</a></li>
-                          <li><a href="#">Four</a></li>
+                            {% for item in footernavigation.menu_items.all %}
+                                <li {% if page.url == item.link %}class="active"{% endif %}><a href="{{item.link}}">{{item.title}}</a></li>
+                            {% endfor %}
                       </ul>
                   </div>
               </footer>
@@ -102,6 +100,8 @@
           </div>
 
         {# Global javascript #}
+        <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/foundation.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/literaterobot.js' %}"></script>
 
         {% block extra_js %}
