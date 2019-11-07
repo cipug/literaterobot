@@ -43,6 +43,9 @@ class MenuItem(Orderable):
         FieldPanel("open_in_new_tab"),
     ]
 
+    def __repr__(self):
+        return f"{self.link_title}"
+
     @property
     def link(self):
         if self.link_page:
@@ -76,5 +79,5 @@ class Menu(ClusterableModel):
         InlinePanel("menu_items", label="Menu Item")
     ]
 
-    def __str__(self):
-        return self.title
+    def __repr__(self):
+        return f"Menu title: {self.title} | ID: {self.id}"
