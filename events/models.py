@@ -7,13 +7,13 @@ from wagtail.search import index
 
 from datetime import date
 
+
 class EventIndexPage(Page):
     intro = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
         FieldPanel('intro', classname="full")
     ]
-
 
 
 class EventPage(Page):
@@ -24,6 +24,7 @@ class EventPage(Page):
     notes = RichTextField(blank=True)
     resources = RichTextField(blank=True)
     attended = models.IntegerField(blank=True, null=True)
+
 
     search_fields = Page.search_fields + [
         index.SearchField('agenda'),
@@ -46,3 +47,4 @@ class EventPage(Page):
         return context
 
     # event_items = EventPage.objects.live().order_by('-date')
+

@@ -1,0 +1,21 @@
+= 2019-03-23 March Jersey Meetup =
+
+17:30 Digital Jersey Hub - Edison Room (the board room)
+
+== Notes ==
+
+3 attendees
+
+Follow up on some of the items discussed previous month.
+
+Discussion of upcoming (now past) Neural Networks course at DJX which a couple of attendees were going to.
+
+Brief chat about using file based storage for local apps & serialisation options.
+
+PIPEnv, Pycharm and how we work with environments (and why)
+
+Some of the resources discussed:
+
+ * [[https://github.com/Mckinsey666/bullet]]
+ * [[https://aws.amazon.com/textract/|AWS Textstract]]
+ * [[https://github.com/pipxproject/pipx|PIPX]]
