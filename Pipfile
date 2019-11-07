@@ -7,9 +7,9 @@ verify_ssl = true
 pylint = "*"
 
 [packages]
-Django = "<2.3,>=2.2"
-wagtail = "~=2.6"
-django-extensions = "*"
+Django = ">=2.2,<2.3"
+wagtail = "<2.7,>=2.6"
+django-extensions = "==2.2.1"
 
 [requires]
 python_version = "3.7"
