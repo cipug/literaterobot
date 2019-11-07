@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'search',
     'events',
     'menus',
+    'utilities',
 
     
     'wagtail.contrib.forms',
