@@ -17,3 +17,6 @@ __pycache__
 
 \.vscode/
 db.sqlite3
+
+# Don't know if anyone else does this...
+pg_notes.txt
