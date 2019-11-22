@@ -17,3 +17,4 @@ Pipfile.lock
 
 \.vscode/
 db.sqlite3
+*checkpoint.ipynb
