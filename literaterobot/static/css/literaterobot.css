@@ -2,10 +2,24 @@ html,body{
     width:100%
 }
 
-footer{
-    background-color: aquamarine;
-}
 
 nav{
-    border-bottom: 1px solid grey
+    border-bottom: 4px solid rgb(150, 150, 150);
+    
+}
+
+footer{
+    background-color: #343a40;
+    border-top: 4px solid rgb(150,150, 150);
+    color: whitesmoke;
+}
+
+
+@media only screen and (max-width:900px){
+    .search-bar{
+        
+        padding-top:20px;
+        border-top: 1px solid rgb(150, 150, 150);
+    }
+
 }
