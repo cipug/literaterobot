@@ -14,6 +14,19 @@ footer{
     color: whitesmoke;
 }
 
+.dark > li{
+    background-color: #343a40;
+    border: 1px solid rgb(150,150, 150);
+    color: whitesmoke;
+    width:25rem;
+}
+.dark >li> a{
+    color: whitesmoke;
+}
+.dark >li> a:hover{
+    color: rgba(255,255,255,.5);
+}
+
 
 @media only screen and (max-width:900px){
     .search-bar{
@@ -21,5 +34,10 @@ footer{
         padding-top:20px;
         border-top: 1px solid rgb(150, 150, 150);
     }
+
+    .dark > li{
+
+    width:100%;
+}
 
 }

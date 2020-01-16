@@ -68,17 +68,26 @@
     <footer class="container-fluid fixed-bottom p-5">
         <div class="row">
             <div class="col-sm">
-FOOTER
+                <h5>Sitemap</h5>
+                <ul class="list-group list-group-flush dark">
+                    {% for item in navigation.menu_items.all%}
+                    <li class='list-group-item{% if page.url == item.link %} active{% endif %}'><a class="nav-link" href="{{item.link}}">{{item.title}}</a></li>
+                    {% endfor %}
+                </ul>
             </div>
-                        <div class="col-sm">
-FOOTER
+            <div class="col-sm">
+                <h4>
+                    FOOTER
+                </h4>
             </div>
-                        <div class="col-sm">
-FOOTER
+            <div class="col-sm">
+                <h4>
+                    FOOTER
+                </h4>
             </div>
         </div>
     </footer>
-    
+
     
     
     {# Global javascript #}
