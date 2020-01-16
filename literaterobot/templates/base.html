@@ -21,16 +21,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static '/css/literaterobot.css' %}">
+       
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+ <link rel="stylesheet" type="text/css" href="{% static '/css/literaterobot.css' %}">
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
-         <div class="container-fluid">
+         <div class="container-fluid p-0">
              
         <nav class="navbar navbar-expand-lg navbar-light bg-light p-4 mb-5 sticky-top">
             <a class="navbar-brand" href="/">Channel Islands' Python User Group</a>
@@ -54,8 +54,6 @@
         <div class="row align-items-center">
             <div class="col-sm">
             {% block content %}{% endblock %}
-            <h1>TEST</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod earum odio placeat ad rem sed in. Dolorum, harum ratione! Itaque illum esse quidem voluptatibus laborum sint quod possimus ex?
             </div>
         </div>
         </div>

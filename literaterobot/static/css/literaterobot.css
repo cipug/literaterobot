@@ -1,3 +1,11 @@
+html,body{
+    width:100%
+}
+
 footer{
     background-color: aquamarine;
+}
+
+nav{
+    border-bottom: 1px solid grey
 }
