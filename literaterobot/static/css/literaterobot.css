@@ -30,6 +30,12 @@ nav{
 .list-group-item.active{
     background-color: #343a40;
     border-color:rgb(150,150, 150);
+    color:#28a745;
+
+}
+.list-group-item.active a{
+
+    color:#28a745;
 
 }
 .sitemap{
