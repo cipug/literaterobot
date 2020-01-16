@@ -26,6 +26,12 @@ nav{
 .dark >li> a:hover{
     color: rgba(255,255,255,.5);
 }
+
+.list-group-item.active{
+    background-color: #343a40;
+    border-color:rgb(150,150, 150);
+
+}
 .sitemap{
     display:inline;
 }
