@@ -8,7 +8,7 @@ nav{
     
 }
 
-footer{
+.footer{
     background-color: #343a40;
     border-top: 4px solid rgb(150,150, 150);
     color: whitesmoke;
@@ -25,6 +25,17 @@ footer{
 }
 .dark >li> a:hover{
     color: rgba(255,255,255,.5);
+}
+.sitemap{
+    display:inline;
+}
+
+.footer-sitemap li{
+    display:inline-block;
+}
+
+.footer-sitemap a{
+    color:rgb(164, 164, 164);
 }
 
 
