@@ -8,6 +8,10 @@ nav{
     
 }
 
+.content{
+    min-height: 70vh;
+}
+
 .footer{
     background-color: #343a40;
     border-top: 4px solid rgb(150,150, 150);
