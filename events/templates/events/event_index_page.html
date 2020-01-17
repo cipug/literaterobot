@@ -20,12 +20,12 @@
 
             <div class="card mt-3">
   <div class="card-body">
+      {% if today < event.date%}
+          <span class="badge badge-pill badge-success mb-3 p-2">Upcoming</span>
+          {% else %}
+          <span class="badge badge-pill badge-warning mb-3 p-2">Past Event</span>
+          {%endif%}
     <h5 class="card-title">{{ event.title }}</h5>
-    {% if today < event.date%}
-        <span class="badge badge-pill badge-success mt-0">Upcoming</span>
-        {% else %}
-        <span class="badge badge-pill badge-warning mt-0">Past Event</span>
-        {%endif%}
     <p class="card-text"><strong>Date: </strong>{{ event.date }}</p>
      <p class="card-text"><strong>Location: </strong>{{event.place}}</p>
     <a href="{% pageurl event %}" class="btn btn-info btn-lg btn-block">More info</a>
