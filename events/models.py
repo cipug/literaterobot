@@ -15,6 +15,14 @@ class EventIndexPage(Page):
         FieldPanel('intro', classname="full")
     ]
 
+    def get_context(self, request):
+        context = super().get_context(request)
+
+        # Add extra variables and return the updated context
+        context['today'] = date.today()
+        events = self.get_children().live().order_by('-first_published_at')
+        context['events'] = events
+        return context
 
 class EventPage(Page):
 
