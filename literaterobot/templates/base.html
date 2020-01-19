@@ -95,8 +95,8 @@
                                     </div>
             </div>
     
-            <div class="row d-flex flex-row justify-content-center">
-                <ul class="footer-sitemap">
+            <div class=" row d-flex flex-row justify-content-center border-top mt-5 footer-sitemap">
+                <ul>
                     {% for item in sitemap.menu_items.all%}
                     <li class='{% if page.url == item.link %} active{% endif %}'><a class="nav-link" href="{{item.link}}">{{item.title}}</a></li>
                     {% endfor %}

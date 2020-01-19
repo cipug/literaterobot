@@ -65,6 +65,16 @@ footer .list-group-item.active a{
     display:inline-block;
 }
 
+.footer-sitemap ul {
+   padding:0;
+}
+
+.footer-sitemap a{
+    color: rgba(255,255,255,.5);
+}
+.footer-sitemap a:hover{
+    color: rgba(255, 255, 255, 0.81);
+}
 
 
 @media only screen and (max-width:900px){
@@ -81,5 +91,8 @@ footer .list-group-item.active a{
 footer .col-sm{
 padding: 0px 0px;
 margin-top:20px;
+}
+.footer-sitemap{
+    flex-direction: column;
 }
 }
