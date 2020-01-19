@@ -80,13 +80,13 @@
                         </h4>
                        <ul class='contact-details'>
                            <li>
-                               <i class="far fa-envelope-open mr-2"></i> info@cipug.org
+                               <i class="far fa-envelope-open mr-2"></i> <a href="mailto:info@cipug.org">info@cipug.org</a>
                            </li>
                        </ul>
                     
                 </div>
                                     <div class="col-sm">
-                                        <h5>Sitemap</h5>
+                                        <h4>Sitemap</h4>
                                         <ul class="list-group list-group-flush dark">
                                             {% for item in navigation.menu_items.all%}
                                             <li class='list-group-item{% if page.url == item.link %} active{% endif %}'><a class="nav-link" href="{{item.link}}">{{item.title}}</a></li>

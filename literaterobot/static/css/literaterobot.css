@@ -12,10 +12,19 @@ nav{
     min-height: 70vh;
 }
 
-.footer{
+footer{
     background-color: #343a40;
     border-top: 4px solid rgb(150,150, 150);
     color: whitesmoke;
+}
+
+footer h4{
+    color: rgba(255,255,255,.5);
+}
+
+footer .col-sm{
+    padding:0px  50px;
+    text-align: justify ;
 }
 .contact-details{
     list-style: none;
@@ -29,11 +38,12 @@ nav{
     width:25rem;
     padding:0;
 }
-.dark >li> a{
+footer a{
     color: whitesmoke;
 }
-.dark >li> a:hover{
+footer a:hover{
     color: rgba(255,255,255,.5);
+    text-decoration: none;
 }
 
 .list-group-item.active{
@@ -71,5 +81,8 @@ nav{
 
     width:100%;
 }
-
+footer .col-sm{
+padding: 0px 0px;
+margin-top:20px;
+}
 }
