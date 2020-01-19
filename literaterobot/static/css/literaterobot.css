@@ -17,12 +17,17 @@ nav{
     border-top: 4px solid rgb(150,150, 150);
     color: whitesmoke;
 }
+.contact-details{
+    list-style: none;
+    padding:0;
+}
 
 .dark > li{
     background-color: #343a40;
     border: 1px solid rgb(150,150, 150);
     color: whitesmoke;
     width:25rem;
+    padding:0;
 }
 .dark >li> a{
     color: whitesmoke;
