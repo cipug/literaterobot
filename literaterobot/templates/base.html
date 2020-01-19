@@ -44,9 +44,9 @@
                     <li class='nav-item{% if page.url == item.link %} active{% endif %}'><a class="nav-link" href="{{item.link}}">{{item.title}}</a></li>
                     {% endfor %}
                 </ul>
-                <form class="form-inline search-bar">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <form class="form-inline search-bar" action="{% url 'search' %}" method="get">
+                    <input class="form-control mr-sm-2" name="query"{% if search_query %} value="{{ search_query }}"{% endif %}" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search">Search</button>
                 </form>
             </div>
         </nav>

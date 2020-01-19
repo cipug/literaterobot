@@ -35,9 +35,10 @@ class EventPage(Page):
 
 
     search_fields = Page.search_fields + [
-        index.SearchField('agenda'),
-        index.SearchField('notes'),
-        index.SearchField('resources'),
+        index.SearchField('agenda', partial_match=True),
+        index.SearchField('notes', partial_match=True),
+        index.SearchField('resources', partial_match=True),
+        index.FilterField('date')
     ]
 
     content_panels = Page.content_panels + [

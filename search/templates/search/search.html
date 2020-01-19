@@ -8,9 +8,9 @@
 {% block content %}
     <h1>Search</h1>
 
-    <form action="{% url 'search' %}" method="get">
-        <input type="text" name="query"{% if search_query %} value="{{ search_query }}"{% endif %}>
-        <input type="submit" value="Search" class="button">
+    <form action="{% url 'search' %}" method="get"class="mb-5">
+        <input class="form-control mr-sm-2 mb-2" type="text" name="query"{% if search_query %} value="{{ search_query }}"{% endif %}>
+        <input class="btn btn-outline-success my-2 my-sm-0"" type="submit" value="Search" class="button">
     </form>
 
     {% if search_results %}
