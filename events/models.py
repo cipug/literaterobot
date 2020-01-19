@@ -24,7 +24,7 @@ class EventIndexPage(Page):
         context['events'] = events
         return context
 
-class EventPage(Page):
+class Event(Page):
 
     date = models.DateField("Event date")
     place = models.CharField(max_length=250)
@@ -51,7 +51,7 @@ class EventPage(Page):
     ]
 
     def get_context(self, request):
-        context = super(EventPage, self).get_context(request)
+        context = super(Event, self).get_context(request)
         context['today'] = date.today()
         return context
 

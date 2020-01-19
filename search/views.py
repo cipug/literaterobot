@@ -14,9 +14,10 @@ def search(request):
     if search_query:
         search_results = Page.objects.live().search(search_query)
         query = Query.get(search_query)
-
+        
         # Record hit
         query.add_hit()
+        print(query)
     else:
         search_results = Page.objects.none()
 
