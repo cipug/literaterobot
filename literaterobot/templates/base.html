@@ -68,23 +68,24 @@
         <div class="container-fluid pt-5 pl-5 pr-5 pb-2 footer">
             <div class="row">
                 <div class="col-sm">
-                    <h5>Sitemap</h5>
-                    <ul class="list-group list-group-flush dark">
-                        {% for item in navigation.menu_items.all%}
-                        <li class='list-group-item{% if page.url == item.link %} active{% endif %}'><a class="nav-link" href="{{item.link}}">{{item.title}}</a></li>
-                        {% endfor %}
-                    </ul>
+                    <h4>
+                        About CIPUG
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptas maxime maiores esse ut? Magnam sed et cum deserunt iure beatae aut quos, magni, fugiat, nemo necessitatibus dolorum corporis? Voluptas?</p>
                 </div>
                 <div class="col-sm">
                     <h4>
-                        Footer
+                        Contact
                     </h4>
                 </div>
-                <div class="col-sm">
-                    <h4>
-                        Footer
-                    </h4>
-                </div>
+                                    <div class="col-sm">
+                                        <h5>Sitemap</h5>
+                                        <ul class="list-group list-group-flush dark">
+                                            {% for item in navigation.menu_items.all%}
+                                            <li class='list-group-item{% if page.url == item.link %} active{% endif %}'><a class="nav-link" href="{{item.link}}">{{item.title}}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
             </div>
     
             <div class="row d-flex flex-row justify-content-center">
