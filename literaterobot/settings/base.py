@@ -98,17 +98,9 @@ WSGI_APPLICATION = 'literaterobot.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'cipug',
-        'USER': 'cipug',
-        'PASSWORD': 'cipug',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -178,8 +170,3 @@ WAGTAIL_SITE_NAME = "literaterobot"
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'https://cipug.org'
 
-WAGTAILSEARCH_BACKENDS = {
-    'default': {
-        'BACKEND': 'wagtail.contrib.postgres_search.backend',
-    },
-}
