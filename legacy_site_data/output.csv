@@ -1,4 +1,4 @@
-./pages/2019(2d)02(2d)21(2d)initial(2d)jersey(2d)meetup/revisions,"= 2019-02-21 Initial Jersey Meetup =
+./pages/2019(2d)02(2d)21(2d)initial(2d)jersey(2d)meetup\revisions,"= 2019-02-21 Initial Jersey Meetup =
 
 17:30 Digital Jersey Hub - Edison Room (the board room)
 
@@ -29,7 +29,7 @@ Agreement that the UG should be kept quite informal, with presentations / speake
 
 Next meetup - TBD
 "
-./pages/2019(2d)03(2d)26(2d)march(2d)jersey(2d)meetup/revisions,"= 2019-03-23 March Jersey Meetup =
+./pages/2019(2d)03(2d)26(2d)march(2d)jersey(2d)meetup\revisions,"= 2019-03-23 March Jersey Meetup =
 
 17:30 Digital Jersey Hub
 
@@ -51,7 +51,7 @@ PIPEnv, Pycharm and how we work with environments (and why)
  * [[https://aws.amazon.com/textract/|AWS Textstract]]
  * [[https://github.com/pipxproject/pipx|PIPX]]
 "
-./pages/2019(2d)04(2d)24(2d)april(2d)jersey(2d)meetup/revisions,"## page was renamed from 2019-04-24-march-jersey-meetup
+./pages/2019(2d)04(2d)24(2d)april(2d)jersey(2d)meetup\revisions,"## page was renamed from 2019-04-24-march-jersey-meetup
 = 2019-04-24 March Jersey Meetup =
 
 17:30 - Unit 13, Le Capelain House, Castle Quay
@@ -86,11 +86,11 @@ Rob demoed the Adafruit Pyportal
  * Neural Net Course Review
  * How to contribute to Open Source
 "
-./pages/2019(2d)04(2d)24(2d)march(2d)jersey(2d)meetup/revisions,"Page moved to correct URL: 
+./pages/2019(2d)04(2d)24(2d)march(2d)jersey(2d)meetup\revisions,"Page moved to correct URL: 
 
 https://cipug.org/2019-04-24-april-jersey-meetup
 "
-./pages/2019(2d)05(2d)may(2d)jersey(2d)meetup/revisions,"= 2019-05-23 March Jersey Meetup =
+./pages/2019(2d)05(2d)may(2d)jersey(2d)meetup\revisions,"= 2019-05-23 March Jersey Meetup =
 
 17:30 - Unit 13, Le Capelain House, Castle Quay [[https://www.google.com/maps/@49.1824762,-2.1155164,20z|Map]]
 
@@ -120,7 +120,7 @@ General chit chat
  * [[https://crontab.guru/|Crontab Guru]]
  * [[https://rcwd.dev/long-lived-python-scripts-with-supervisor.html|Long lived Python scripts with Supervisor]]
 "
-./pages/2019(2d)06(2d)june(2d)jersey(2d)meetup/revisions,"= 2019-06-26 June Jersey Meetup =
+./pages/2019(2d)06(2d)june(2d)jersey(2d)meetup\revisions,"= 2019-06-26 June Jersey Meetup =
 
 17:30 - Unit 13, Le Capelain House, Castle Quay [[https://www.google.com/maps/@49.1824762,-2.1155164,20z|Map]]
 
@@ -205,7 +205,7 @@ Phil did a demo of a classic car data project which generated discussion on the 
  * [[https://docs.python.org/3/library/re.html|Python Regular Expressions]]
  * [[https://regex101.com/|Regex 101]]
 "
-./pages/2019(2d)07(2d)july(2d)jersey(2d)meetup/revisions,"= 2019-07 July Jersey Meetup =
+./pages/2019(2d)07(2d)july(2d)jersey(2d)meetup\revisions,"= 2019-07 July Jersey Meetup =
 
 17:30 - Unit 13, Le Capelain House, Castle Quay [[https://www.google.com/maps/@49.1824762,-2.1155164,20z|Map]]
 
@@ -227,7 +227,7 @@ Phil did a demo of a classic car data project which generated discussion on the 
  * [[https://github.com/cipug/docker-demo|Docker demo code]]
  * [[https://github.com/cipug/literate-robot/|CIPUG Blog Project]]
 "
-./pages/2019(2d)08(2d)august(2d)jersey(2d)meetup/revisions,"= 2019-08-29 August Jersey Meetup =
+./pages/2019(2d)08(2d)august(2d)jersey(2d)meetup\revisions,"= 2019-08-29 August Jersey Meetup =
 
 17:30 - Unit 13, Le Capelain House, Castle Quay [[https://www.google.com/maps/@49.1824762,-2.1155164,20z|Map]]
 
@@ -278,7 +278,7 @@ Now standard thankyous to Phil for providing space for this month's meet up.
  * [[https://Opendata.gov.je|Opendata.gov.je]]
  * [[https://ckan.org/|CKAN]]
 "
-./pages/2019(2d)09(2d)september(2d)jersey(2d)meetup/revisions,"= 2019-09-?? September Jersey Meetup =
+./pages/2019(2d)09(2d)september(2d)jersey(2d)meetup\revisions,"= 2019-09-?? September Jersey Meetup =
 
 17:30 - Unit 13, Le Capelain House, Castle Quay [[https://www.google.com/maps/@49.1824762,-2.1155164,20z|Map]]
 
@@ -287,7 +287,7 @@ Now standard thankyous to Phil for providing space for this month's meet up.
 
 Very informal meetup that may or may not have happened due to low numbers.
 "
-./pages/2019(2d)10(2d)october(2d)jersey(2d)meetup/revisions,"= 2019-10-24 October Jersey Meetup =
+./pages/2019(2d)10(2d)october(2d)jersey(2d)meetup\revisions,"= 2019-10-24 October Jersey Meetup =
 
 17:30 - Unit 13, Le Capelain House, Castle Quay [[https://www.google.com/maps/@49.1824762,-2.1155164,20z|Map]]
 
@@ -320,7 +320,7 @@ Very informal meetup that may or may not have happened due to low numbers.
  * [[https://amzn.to/2JxMuBo|Classic Computer Science Problems in Python]]
  * [[https://github.com/cookiecutter/cookiecutter|CookieCutter]]
 "
-./pages/BadContent/revisions,"## Please edit system and help pages ONLY in the master wiki!
+./pages/BadContent\revisions,"## Please edit system and help pages ONLY in the master wiki!
 ## For more information, please see MoinMoin:MoinDev/Translation.
 ##master-page:Unknown-Page
 ##master-date:Unknown-Date
@@ -4780,13 +4780,13 @@ dbadressen\.com
 ## spam any more since switching to 1.6). So if you still suffer from spam, consider 1.6 or 1.7.
 ## ===========================================================================================
 "
-./pages/Guernsey/revisions,"= Guernsey =
+./pages/Guernsey\revisions,"= Guernsey =
 
 Nothing here yet. 
 
 If you're from Guernsey and want to take ownership of your side of the CIPug then please get in touch - rcwd@cipug.org
 "
-./pages/Jersey/revisions,"= Jersey =
+./pages/Jersey\revisions,"= Jersey =
 
 The Jersey chapter is currently running a monthly meet up, collaborating on a channel on the Tech Tribes Slack group and actively seeking new Python developers of all levels from across the island.
 
@@ -4828,13 +4828,13 @@ from 17:30 in the Digital Jersey Hub
 [[2019-02-21-initial-jersey-meetup|2019-02-21 - Initial Jersey Meetup]]
 from 17:30 in the Digital Jersey Hub
 "
-./pages/RequestAccount/revisions,"= Request a user account =
+./pages/RequestAccount\revisions,"= Request a user account =
 
 Due to an almost immediate barrage of spam, user registration is locked down. 
 
 If you want an account please email rcwd@cipug.org with your username of preference and your email address and you'll be added ASAP.
 "
-./pages/about/revisions,"= About CIPUG =
+./pages/about\revisions,"= About CIPUG =
 
 Founded in March 2019, the Channel Islands Python User Group is a monthly meet up for users of the Python programming language.
 
@@ -4846,7 +4846,7 @@ For more information on upcoming meet ups check the [[jersey|meetups]] page or f
 
 Note currently the Jersey chapter is fully up and running, Guernsey is still under construction but should be online soon.
 "
-./pages/codeofconduct/revisions,"= Channel Islands Python User Group Code of Conduct =
+./pages/codeofconduct\revisions,"= Channel Islands Python User Group Code of Conduct =
 
 The Channel Islands Python User Group (CIPUG) community is made up of members from a range of different backgrounds with a diverse set of skills, personalities, and experiences. It is through these differences that our community experiences great successes and continued growth. When you're working with members of the community, we encourage you to follow these guidelines which help steer our interactions and strive to keep ours a positive, successful, and growing community.
 
@@ -4909,7 +4909,7 @@ Questions/comments/reports? Please write to coc@cipug.org.
 
 Note: this document is based on a combination of the [[https://www.python.org/psf/codeofconduct/|Python Software Foundation Code of Conduct]] and the [[https://us.pycon.org/2019/about/code-of-conduct/|PyCon US Code of Conduct]].
 "
-./pages/frontpage/revisions,"## Please edit system and help pages ONLY in the master wiki!
+./pages/frontpage\revisions,"## Please edit system and help pages ONLY in the master wiki!
 ## For more information, please see MoinMoin:MoinDev/Translation.
 ##master-page:FrontPage
 #format wiki

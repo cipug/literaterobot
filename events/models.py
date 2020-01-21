@@ -39,7 +39,6 @@ class EventIndexPage(Page):
             events = paginator.page(paginator.num_pages)
         
         context['events'] = events
-        context['mark'] = 'mark'
 
         return context
 
