@@ -8,14 +8,16 @@ from wagtail.search.models import Query
 def search(request):
     search_query = request.GET.get('query', None)
     page = request.GET.get('page', 1)
+    print(search_query)
 
     # Search
     if search_query:
         search_results = Page.objects.live().search(search_query)
         query = Query.get(search_query)
-
+        
         # Record hit
         query.add_hit()
+        print(query)
     else:
         search_results = Page.objects.none()
 

@@ -80,4 +80,7 @@ class Menu(ClusterableModel):
     ]
 
     def __repr__(self):
-        return f"Menu title: {self.title} | ID: {self.id}"
+        return f"{self.title}"
+
+    def __str__(self):
+        return f"{self.title}"

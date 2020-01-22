@@ -9,6 +9,7 @@ class Command(BaseCommand):
         try:
             menu = Menu.objects.create(title='main-nav',slug='main-nav')
             link1 = MenuItem.objects.create(link_title='test',link_url='https://www.google.com',open_in_new_tab=True,page=menu)
+            link2 = MenuItem.objects.create(link_title='Test Event Index',link_url='/test-event-index/',open_in_new_tab=False,page=menu)
 
             self.stdout.write(self.style.SUCCESS('Menu created, you trooper!'))
         
