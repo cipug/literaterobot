@@ -9,7 +9,7 @@
         <meta charset="utf-8" />
         <title>
             {% block title %}
-                {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}
+               CIPUG | {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}
             {% endblock %}
             {% block title_suffix %}
                 {% with self.get_site.site_name as site_name %}
@@ -24,6 +24,7 @@
        
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
  <link rel="stylesheet" type="text/css" href="{% static '/css/literaterobot.css' %}">
+ <script src="https://kit.fontawesome.com/204044cf94.js" crossorigin="anonymous"></script>
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
@@ -44,9 +45,9 @@
                     <li class='nav-item{% if page.url == item.link %} active{% endif %}'><a class="nav-link" href="{{item.link}}">{{item.title}}</a></li>
                     {% endfor %}
                 </ul>
-                <form class="form-inline search-bar">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <form class="form-inline search-bar" action="{% url 'search' %}" method="get">
+                    <input class="form-control mr-sm-2" name="query"{% if search_query %} value="{{ search_query }}"{% endif %}" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search">Search</button>
                 </form>
             </div>
         </nav>
@@ -68,27 +69,34 @@
         <div class="container-fluid pt-5 pl-5 pr-5 pb-2 footer">
             <div class="row">
                 <div class="col-sm">
-                    <h5>Sitemap</h5>
-                    <ul class="list-group list-group-flush dark">
-                        {% for item in navigation.menu_items.all%}
-                        <li class='list-group-item{% if page.url == item.link %} active{% endif %}'><a class="nav-link" href="{{item.link}}">{{item.title}}</a></li>
-                        {% endfor %}
-                    </ul>
+                    <h4>
+                        About CIPUG
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptas maxime maiores esse ut? Magnam sed et cum deserunt iure beatae aut quos, magni, fugiat, nemo necessitatibus dolorum corporis? Voluptas?</p>
                 </div>
                 <div class="col-sm">
                     <h4>
-                        Footer
-                    </h4>
+                        Contact
+                        </h4>
+                       <ul class='contact-details'>
+                           <li>
+                               <i class="far fa-envelope-open mr-2"></i> <a href="mailto:info@cipug.org">info@cipug.org</a>
+                           </li>
+                       </ul>
+                    
                 </div>
-                <div class="col-sm">
-                    <h4>
-                        Footer
-                    </h4>
-                </div>
+                                    <div class="col-sm">
+                                        <h4>Sitemap</h4>
+                                        <ul class="list-group list-group-flush dark">
+                                            {% for item in navigation.menu_items.all%}
+                                            <li class='list-group-item{% if page.url == item.link %} active{% endif %}'><a class="nav-link" href="{{item.link}}">{{item.title}}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
             </div>
     
-            <div class="row d-flex flex-row justify-content-center">
-                <ul class="footer-sitemap">
+            <div class=" row d-flex flex-row justify-content-center border-top mt-5 footer-sitemap">
+                <ul>
                     {% for item in sitemap.menu_items.all%}
                     <li class='{% if page.url == item.link %} active{% endif %}'><a class="nav-link" href="{{item.link}}">{{item.title}}</a></li>
                     {% endfor %}

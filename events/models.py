@@ -24,7 +24,7 @@ class EventIndexPage(Page):
         context['events'] = events
         return context
 
-class EventPage(Page):
+class Event(Page):
 
     date = models.DateField("Event date")
     place = models.CharField(max_length=250)
@@ -35,9 +35,10 @@ class EventPage(Page):
 
 
     search_fields = Page.search_fields + [
-        index.SearchField('agenda'),
-        index.SearchField('notes'),
-        index.SearchField('resources'),
+        index.SearchField('agenda', partial_match=True),
+        index.SearchField('notes', partial_match=True),
+        index.SearchField('resources', partial_match=True),
+        index.FilterField('date')
     ]
 
     content_panels = Page.content_panels + [
@@ -50,7 +51,7 @@ class EventPage(Page):
     ]
 
     def get_context(self, request):
-        context = super(EventPage, self).get_context(request)
+        context = super(Event, self).get_context(request)
         context['today'] = date.today()
         return context
 

@@ -12,10 +12,23 @@ nav{
     min-height: 70vh;
 }
 
-.footer{
+footer{
     background-color: #343a40;
     border-top: 4px solid rgb(150,150, 150);
     color: whitesmoke;
+}
+
+footer h4{
+    color: rgba(255,255,255,.5);
+}
+
+footer .col-sm{
+    padding:0px  50px;
+    text-align: justify ;
+}
+.contact-details{
+    list-style: none;
+    padding:0;
 }
 
 .dark > li{
@@ -23,12 +36,14 @@ nav{
     border: 1px solid rgb(150,150, 150);
     color: whitesmoke;
     width:25rem;
+    padding:0;
 }
-.dark >li> a{
+footer a{
     color: whitesmoke;
 }
-.dark >li> a:hover{
+footer a:hover{
     color: rgba(255,255,255,.5);
+    text-decoration: none;
 }
 
 .list-group-item.active{
@@ -37,7 +52,7 @@ nav{
     color:#28a745;
 
 }
-.list-group-item.active a{
+footer .list-group-item.active a{
 
     color:#28a745;
 
@@ -50,8 +65,15 @@ nav{
     display:inline-block;
 }
 
+.footer-sitemap ul {
+   padding:0;
+}
+
 .footer-sitemap a{
-    color:rgb(164, 164, 164);
+    color: rgba(255,255,255,.5);
+}
+.footer-sitemap a:hover{
+    color: rgba(255, 255, 255, 0.81);
 }
 
 
@@ -66,5 +88,11 @@ nav{
 
     width:100%;
 }
-
+footer .col-sm{
+padding: 0px 0px;
+margin-top:20px;
+}
+.footer-sitemap{
+    flex-direction: column;
+}
 }

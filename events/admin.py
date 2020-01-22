@@ -2,10 +2,10 @@ from wagtail.contrib.modeladmin.options import (
     ModelAdmin,
     modeladmin_register,
 )
-from .models import EventPage
+from .models import Event
 # Register your models here.
 class EventAdmin(ModelAdmin):
-    model = EventPage
+    model = Event
     menu_label = "Events"
     menu_icon = "date"
     menu_order = 290
