@@ -138,4 +138,5 @@ for il in range(9):
 content_df.to_csv(r'old_site_data.csv')
 
 # Export to JSON
-content_df.to_json(r'old_site_data.json')
+content_df[0:9].to_json(r'old_site_data_events.json')
+content_df[9:].to_json(r'old_site_data_other_pages.json')
