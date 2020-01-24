@@ -112,11 +112,13 @@ def format_post(post):
     except:
         match = re.search(r'\d{4}-\d{2}', header)
         date = dt.strptime(match.group(), '%Y-%m').date()
+    date = date.strftime('%Y-%m-%d')
 
     # Find the no of attendees (thanks Dave)...
     try:
         attendees = re.search(r"(\d+)\sattendees",notes)
         attended = attendees[1]
+        attended = int(attended)
     except:
         attended = 0
 
