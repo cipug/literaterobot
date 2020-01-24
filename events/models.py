@@ -23,12 +23,19 @@ class EventIndexPage(Page):
 
     def get_context(self, request):
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 216447b65b7d97cbbfff20ac0893b7dbb1362edd
         context = super(EventIndexPage, self).get_context(request)
 
         # Get all published event pages as a queryset
         all_event_pages = EventPage.objects.live().order_by('-date')
 
         paginator = Paginator(all_event_pages, 3) # show 3 events per page
+        
+        # Add extra variables and return the updated context
+        context['today'] = date.today()
+        events = self.get_children().live().order_by('-first_published_at')
 
         page = request.GET.get('page')
 
@@ -41,6 +48,7 @@ class EventIndexPage(Page):
         
         context['events'] = events
 
+<<<<<<< HEAD
 =======
         context = super().get_context(request)
 
@@ -49,6 +57,11 @@ class EventIndexPage(Page):
         events = self.get_children().live().order_by('-first_published_at')
         context['events'] = events
 >>>>>>> upstream/develop
+=======
+        
+        
+
+>>>>>>> 216447b65b7d97cbbfff20ac0893b7dbb1362edd
         return context
 
 class Event(Page):
