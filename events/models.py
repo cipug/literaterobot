@@ -12,7 +12,7 @@ class EventIndexPage(Page):
     intro = RichTextField(blank=True)
 
     subpage_types = [
-        'events.EventPage',
+        'events.Event',
     ]
 
     parent_page_type = ['home.HomePage']
@@ -22,20 +22,12 @@ class EventIndexPage(Page):
     ]
 
     def get_context(self, request):
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 216447b65b7d97cbbfff20ac0893b7dbb1362edd
         context = super(EventIndexPage, self).get_context(request)
 
         # Get all published event pages as a queryset
-        all_event_pages = EventPage.objects.live().order_by('-date')
+        all_event_pages = Event.objects.live().order_by('-date')   # or ('-first_published_at')?
 
         paginator = Paginator(all_event_pages, 3) # show 3 events per page
-        
-        # Add extra variables and return the updated context
-        context['today'] = date.today()
-        events = self.get_children().live().order_by('-first_published_at')
 
         page = request.GET.get('page')
 
@@ -45,23 +37,12 @@ class EventIndexPage(Page):
             events = paginator.page(1)
         except EmptyPage:
             events = paginator.page(paginator.num_pages)
-        
-        context['events'] = events
-
-<<<<<<< HEAD
-=======
-        context = super().get_context(request)
 
         # Add extra variables and return the updated context
-        context['today'] = date.today()
-        events = self.get_children().live().order_by('-first_published_at')
+      
         context['events'] = events
->>>>>>> upstream/develop
-=======
-        
-        
+        context['today'] = date.today()
 
->>>>>>> 216447b65b7d97cbbfff20ac0893b7dbb1362edd
         return context
 
 class Event(Page):

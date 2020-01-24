@@ -5,19 +5,9 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
-<<<<<<< HEAD
-<<<<<<< HEAD
-ipython = "*"
-django-debug-toolbar = "*"
-=======
-rope = "*"
->>>>>>> upstream/develop
-=======
 ipython = "*"
 django-debug-toolbar = "*"
 rope = "*"
-
->>>>>>> 216447b65b7d97cbbfff20ac0893b7dbb1362edd
 
 [packages]
 Django = ">=2.2,<2.3"

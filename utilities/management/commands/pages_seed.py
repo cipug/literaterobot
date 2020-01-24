@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from wagtail.core.models import Page
-from events.models import EventIndexPage, EventPage
+from events.models import EventIndexPage, Event
 from home.models import HomePage
 
 import json
@@ -43,7 +43,7 @@ class Command(BaseCommand):
             number_of_events = 13
 
             for n in range(number_of_events):
-                event_page = EventPage(
+                event = Event(
                     date = event_json["date"][str(n)],
                     place = event_json["place"][str(n)],
                     agenda = event_json["agenda"][str(n)],
@@ -51,7 +51,7 @@ class Command(BaseCommand):
                     resources = event_json["resources"][str(n)],
                     attended = event_json["attended"][str(n)],
                 )
-                event_index_page.add_child(instance=event_page) 
+                event_index_page.add_child(instance=event) 
                 self.stdout.write(self.style.SUCCESS('Event detail page no. {} created!'.format(str(n))))
 
         except:

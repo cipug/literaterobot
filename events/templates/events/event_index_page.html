@@ -11,42 +11,8 @@
 
     <div class="intro">{{ page.intro|richtext }}</div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    {% for event in events %}
-        <h2><a href="{% pageurl event %}">{{ event.title }}</a></h2>
-        <p>At: {{ event.place }} on {{ event.date }}</p>
-
-        {% if event.agenda %}
-            <p>Agenda:</p> {{ event.agenda|richtext }}
-        {% else %} 
-            <p>Agenda:</p> Agenda to be confirmed.  
-            <p></p>
-        {% endif %}
-    {% endfor %}
-
-    <ul class="pagination">
-        {% if events.has_previous %}
-          <li><a href="?page={{ events.previous_page_number }}"><i class="fa fa-angle-left"></i></a></li>
-        {% endif %}
-
-        {% for page_num in events.paginator.page_range %}
-          <li {% if page_num == events.number %}class="active"{% endif %}><a href="?page={{ page_num }}">{{ page_num }}</a></li>
-        {% endfor %}
-
-        {% if events.has_next %}
-          <li><a href="?page={{ events.next_page_number }}"><i class="fa fa-angle-right"></i></a></li>
-        {% endif %}
-    </ul>
-=======
-
-
-    {% for event in events  %}
+{% for event in events  %}
         {% with event=event.specific %}
-=======
-    {% for event in events %}
-              {% with event=event.specific %}
->>>>>>> 216447b65b7d97cbbfff20ac0893b7dbb1362edd
 
         
 
@@ -64,17 +30,10 @@
   </div>
 </div>
 
-
-
-
 {%endwith%}
-<<<<<<< HEAD
     {% endfor %}
 
->>>>>>> upstream/develop
-=======
-
-    <ul class="pagination">
+    <ul class="pagination mb-3 mt-3">
         {% if events.has_previous %}
           <li><a href="?page={{ events.previous_page_number }}"><i class="fa fa-angle-left"></i></a></li>
         {% endif %}
@@ -87,7 +46,5 @@
           <li><a href="?page={{ events.next_page_number }}"><i class="fa fa-angle-right"></i></a></li>
         {% endif %}
     </ul>
-
->>>>>>> 216447b65b7d97cbbfff20ac0893b7dbb1362edd
 
 {% endblock %}
