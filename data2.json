@@ -1,0 +1,735 @@
+[
+{
+  "model": "menus.menuitem",
+  "pk": 1,
+  "fields": {
+    "sort_order": null,
+    "link_title": "test",
+    "link_url": "https://www.google.com",
+    "link_page": null,
+    "open_in_new_tab": true,
+    "page": 1
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 2,
+  "fields": {
+    "sort_order": 0,
+    "link_title": "Events index",
+    "link_url": "http://127.0.0.1:8000/",
+    "link_page": 10,
+    "open_in_new_tab": false,
+    "page": 2
+  }
+},
+{
+  "model": "menus.menu",
+  "pk": 1,
+  "fields": {
+    "title": "main-nav",
+    "slug": "main-nav"
+  }
+},
+{
+  "model": "menus.menu",
+  "pk": 2,
+  "fields": {
+    "title": "Events index",
+    "slug": "events-index"
+  }
+},
+{
+  "model": "wagtailcore.site",
+  "pk": 3,
+  "fields": {
+    "hostname": "localhost",
+    "port": 8000,
+    "site_name": "Mark's first play site",
+    "root_page": 9,
+    "is_default_site": true
+  }
+},
+{
+  "model": "wagtailcore.collection",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 0,
+    "name": "Root"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Moderators",
+    "permissions": [
+      [
+        "access_admin",
+        "wagtailadmin",
+        "admin"
+      ],
+      [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "delete_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "delete_image",
+        "wagtailimages",
+        "image"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Editors",
+    "permissions": [
+      [
+        "access_admin",
+        "wagtailadmin",
+        "admin"
+      ],
+      [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "delete_document",
+        "wagtaildocs",
+        "document"
+      ],
+      [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ],
+      [
+        "delete_image",
+        "wagtailimages",
+        "image"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$Qu2yAU4KvgjM$iAAaHHYRb8h8XMtuCUwgOnWpkCRZJ3+Re7w8jfFvuzw=",
+    "last_login": "2019-11-08T21:20:36.653Z",
+    "is_superuser": true,
+    "username": "cipug",
+    "first_name": "",
+    "last_name": "",
+    "email": "mrm198@hotmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-11-08T21:20:04.237Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 7,
+  "fields": {
+    "page": 9,
+    "submitted_for_moderation": false,
+    "created_at": "2019-11-08T22:52:39.304Z",
+    "user": [
+      "cipug"
+    ],
+    "content_json": "{\"pk\": 9, \"path\": \"00010001\", \"depth\": 2, \"numchild\": 0, \"title\": \"Test\", \"draft_title\": \"Test\", \"slug\": \"test\", \"content_type\": 2, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/test/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"body\": \"<p>Test2</p>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 8,
+  "fields": {
+    "page": 9,
+    "submitted_for_moderation": false,
+    "created_at": "2019-11-14T06:31:19.333Z",
+    "user": [
+      "cipug"
+    ],
+    "content_json": "{\"pk\": 9, \"path\": \"00010001\", \"depth\": 2, \"numchild\": 0, \"title\": \"Cipug home page\", \"draft_title\": \"Test\", \"slug\": \"home\", \"content_type\": 2, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/test/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": \"2019-11-08T22:52:39.321Z\", \"last_published_at\": \"2019-11-08T22:52:39.321Z\", \"latest_revision_created_at\": \"2019-11-08T22:52:39.304Z\", \"live_revision\": 7, \"body\": \"<p>thi sis cipug webpage</p>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 9,
+  "fields": {
+    "page": 10,
+    "submitted_for_moderation": false,
+    "created_at": "2019-11-14T06:54:33.400Z",
+    "user": [
+      "cipug"
+    ],
+    "content_json": "{\"pk\": 10, \"path\": \"000100010001\", \"depth\": 3, \"numchild\": 0, \"title\": \"Events index\", \"draft_title\": \"Events index\", \"slug\": \"events-index\", \"content_type\": 6, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/events-index/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"intro\": \"<p>Summary of events</p>\"}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 10,
+  "fields": {
+    "page": 11,
+    "submitted_for_moderation": false,
+    "created_at": "2019-11-14T06:55:10.564Z",
+    "user": [
+      "cipug"
+    ],
+    "content_json": "{\"pk\": 11, \"path\": \"0001000100010001\", \"depth\": 4, \"numchild\": 0, \"title\": \"Event 1\", \"draft_title\": \"Event 1\", \"slug\": \"event-1\", \"content_type\": 7, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/events-index/event-1/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"date\": \"2019-08-05\", \"place\": \"Waterfront\", \"agenda\": \"<p>agenda stuff</p>\", \"notes\": \"<p>blah</p>\", \"resources\": \"<p>blah</p>\", \"attended\": 5}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 11,
+  "fields": {
+    "page": 12,
+    "submitted_for_moderation": false,
+    "created_at": "2019-11-14T06:55:39.638Z",
+    "user": [
+      "cipug"
+    ],
+    "content_json": "{\"pk\": 12, \"path\": \"0001000100010002\", \"depth\": 4, \"numchild\": 0, \"title\": \"Awesome event\", \"draft_title\": \"Awesome event\", \"slug\": \"awesome-event\", \"content_type\": 7, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/events-index/awesome-event/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"date\": \"2019-09-10\", \"place\": \"Water\", \"agenda\": \"<p>Stuff</p>\", \"notes\": \"<p>Stuff</p>\", \"resources\": \"<p>Stuff</p>\", \"attended\": 1}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 12,
+  "fields": {
+    "page": 13,
+    "submitted_for_moderation": false,
+    "created_at": "2019-11-14T06:56:13.003Z",
+    "user": [
+      "cipug"
+    ],
+    "content_json": "{\"pk\": 13, \"path\": \"0001000100010003\", \"depth\": 4, \"numchild\": 0, \"title\": \"Future event 11 Dec\", \"draft_title\": \"Future event 11 Dec\", \"slug\": \"future-event-11-dec\", \"content_type\": 7, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/events-index/future-event-11-dec/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"date\": \"2019-12-11\", \"place\": \"Water\", \"agenda\": \"<p>Stuff</p>\", \"notes\": \"<p>Stuff</p>\", \"resources\": \"<p>Stuff</p>\", \"attended\": null}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 13,
+  "fields": {
+    "page": 14,
+    "submitted_for_moderation": false,
+    "created_at": "2019-11-14T06:56:42.439Z",
+    "user": [
+      "cipug"
+    ],
+    "content_json": "{\"pk\": 14, \"path\": \"0001000100010004\", \"depth\": 4, \"numchild\": 0, \"title\": \"OK Event\", \"draft_title\": \"OK Event\", \"slug\": \"ok-event\", \"content_type\": 7, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/events-index/ok-event/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"date\": \"2019-11-05\", \"place\": \"OFfice\", \"agenda\": \"<p>Stuff</p>\", \"notes\": \"<p>Stuff</p>\", \"resources\": \"<p>Stuff</p>\", \"attended\": 100}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 14,
+  "fields": {
+    "page": 15,
+    "submitted_for_moderation": false,
+    "created_at": "2019-11-14T20:46:38.858Z",
+    "user": [
+      "cipug"
+    ],
+    "content_json": "{\"pk\": 15, \"path\": \"0001000100010005\", \"depth\": 4, \"numchild\": 0, \"title\": \"Future event 25 Dec no notes\", \"draft_title\": \"Future event 25 Dec no notes\", \"slug\": \"future-event-25-dec-no-notes\", \"content_type\": 7, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/events-index/future-event-25-dec-no-notes/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"date\": \"2019-12-25\", \"place\": \"Waterfront\", \"agenda\": \"\", \"notes\": \"\", \"resources\": \"\", \"attended\": null}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 15,
+  "fields": {
+    "page": 16,
+    "submitted_for_moderation": false,
+    "created_at": "2019-11-14T20:47:06.662Z",
+    "user": [
+      "cipug"
+    ],
+    "content_json": "{\"pk\": 16, \"path\": \"0001000100010006\", \"depth\": 4, \"numchild\": 0, \"title\": \"Oldie event\", \"draft_title\": \"Oldie event\", \"slug\": \"oldie-event\", \"content_type\": 7, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/events-index/oldie-event/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"date\": \"2019-03-11\", \"place\": \"There\", \"agenda\": \"<p>Stuff</p>\", \"notes\": \"\", \"resources\": \"\", \"attended\": 12}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.pagerevision",
+  "pk": 16,
+  "fields": {
+    "page": 17,
+    "submitted_for_moderation": false,
+    "created_at": "2019-11-14T20:47:59.994Z",
+    "user": [
+      "cipug"
+    ],
+    "content_json": "{\"pk\": 17, \"path\": \"0001000100010007\", \"depth\": 4, \"numchild\": 0, \"title\": \"More events\", \"draft_title\": \"More events\", \"slug\": \"more-events\", \"content_type\": 7, \"live\": true, \"has_unpublished_changes\": false, \"url_path\": \"/home/events-index/more-events/\", \"owner\": 1, \"seo_title\": \"\", \"show_in_menus\": false, \"search_description\": \"\", \"go_live_at\": null, \"expire_at\": null, \"expired\": false, \"locked\": false, \"first_published_at\": null, \"last_published_at\": null, \"latest_revision_created_at\": null, \"live_revision\": null, \"date\": \"2019-11-02\", \"place\": \"There\", \"agenda\": \"\", \"notes\": \"\", \"resources\": \"\", \"attended\": null}",
+    "approved_go_live_at": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 1,
+    "title": "Root",
+    "draft_title": "Root",
+    "slug": "root",
+    "content_type": [
+      "wagtailcore",
+      "page"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/",
+    "owner": null,
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": null,
+    "last_published_at": null,
+    "latest_revision_created_at": null,
+    "live_revision": null
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 9,
+  "fields": {
+    "path": "00010001",
+    "depth": 2,
+    "numchild": 1,
+    "title": "Cipug home page",
+    "draft_title": "Cipug home page",
+    "slug": "home",
+    "content_type": [
+      "home",
+      "homepage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/",
+    "owner": [
+      "cipug"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2019-11-08T22:52:39.321Z",
+    "last_published_at": "2019-11-14T06:31:19.718Z",
+    "latest_revision_created_at": "2019-11-14T06:31:19.333Z",
+    "live_revision": 8
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 10,
+  "fields": {
+    "path": "000100010001",
+    "depth": 3,
+    "numchild": 7,
+    "title": "Events index",
+    "draft_title": "Events index",
+    "slug": "events-index",
+    "content_type": [
+      "events",
+      "eventindexpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events-index/",
+    "owner": [
+      "cipug"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2019-11-14T06:54:33.666Z",
+    "last_published_at": "2019-11-14T06:54:33.666Z",
+    "latest_revision_created_at": "2019-11-14T06:54:33.400Z",
+    "live_revision": 9
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 11,
+  "fields": {
+    "path": "0001000100010001",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Event 1",
+    "draft_title": "Event 1",
+    "slug": "event-1",
+    "content_type": [
+      "events",
+      "eventpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events-index/event-1/",
+    "owner": [
+      "cipug"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2019-11-14T06:55:10.791Z",
+    "last_published_at": "2019-11-14T06:55:10.791Z",
+    "latest_revision_created_at": "2019-11-14T06:55:10.564Z",
+    "live_revision": 10
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 12,
+  "fields": {
+    "path": "0001000100010002",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Awesome event",
+    "draft_title": "Awesome event",
+    "slug": "awesome-event",
+    "content_type": [
+      "events",
+      "eventpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events-index/awesome-event/",
+    "owner": [
+      "cipug"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2019-11-14T06:55:39.899Z",
+    "last_published_at": "2019-11-14T06:55:39.899Z",
+    "latest_revision_created_at": "2019-11-14T06:55:39.638Z",
+    "live_revision": 11
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 13,
+  "fields": {
+    "path": "0001000100010003",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Future event 11 Dec",
+    "draft_title": "Future event 11 Dec",
+    "slug": "future-event-11-dec",
+    "content_type": [
+      "events",
+      "eventpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events-index/future-event-11-dec/",
+    "owner": [
+      "cipug"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2019-11-14T06:56:13.234Z",
+    "last_published_at": "2019-11-14T06:56:13.234Z",
+    "latest_revision_created_at": "2019-11-14T06:56:13.003Z",
+    "live_revision": 12
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 14,
+  "fields": {
+    "path": "0001000100010004",
+    "depth": 4,
+    "numchild": 0,
+    "title": "OK Event",
+    "draft_title": "OK Event",
+    "slug": "ok-event",
+    "content_type": [
+      "events",
+      "eventpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events-index/ok-event/",
+    "owner": [
+      "cipug"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2019-11-14T06:56:42.654Z",
+    "last_published_at": "2019-11-14T06:56:42.654Z",
+    "latest_revision_created_at": "2019-11-14T06:56:42.439Z",
+    "live_revision": 13
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 15,
+  "fields": {
+    "path": "0001000100010005",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Future event 25 Dec no notes",
+    "draft_title": "Future event 25 Dec no notes",
+    "slug": "future-event-25-dec-no-notes",
+    "content_type": [
+      "events",
+      "eventpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events-index/future-event-25-dec-no-notes/",
+    "owner": [
+      "cipug"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2019-11-14T20:46:39.149Z",
+    "last_published_at": "2019-11-14T20:46:39.149Z",
+    "latest_revision_created_at": "2019-11-14T20:46:38.858Z",
+    "live_revision": 14
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 16,
+  "fields": {
+    "path": "0001000100010006",
+    "depth": 4,
+    "numchild": 0,
+    "title": "Oldie event",
+    "draft_title": "Oldie event",
+    "slug": "oldie-event",
+    "content_type": [
+      "events",
+      "eventpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events-index/oldie-event/",
+    "owner": [
+      "cipug"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2019-11-14T20:47:06.869Z",
+    "last_published_at": "2019-11-14T20:47:06.869Z",
+    "latest_revision_created_at": "2019-11-14T20:47:06.662Z",
+    "live_revision": 15
+  }
+},
+{
+  "model": "wagtailcore.page",
+  "pk": 17,
+  "fields": {
+    "path": "0001000100010007",
+    "depth": 4,
+    "numchild": 0,
+    "title": "More events",
+    "draft_title": "More events",
+    "slug": "more-events",
+    "content_type": [
+      "events",
+      "eventpage"
+    ],
+    "live": true,
+    "has_unpublished_changes": false,
+    "url_path": "/home/events-index/more-events/",
+    "owner": [
+      "cipug"
+    ],
+    "seo_title": "",
+    "show_in_menus": false,
+    "search_description": "",
+    "go_live_at": null,
+    "expire_at": null,
+    "expired": false,
+    "locked": false,
+    "first_published_at": "2019-11-14T20:48:00.230Z",
+    "last_published_at": "2019-11-14T20:48:00.230Z",
+    "latest_revision_created_at": "2019-11-14T20:47:59.994Z",
+    "live_revision": 16
+  }
+},
+{
+  "model": "events.eventpage",
+  "pk": 11,
+  "fields": {
+    "date": "2019-08-05",
+    "place": "Waterfront",
+    "agenda": "<p>agenda stuff</p>",
+    "notes": "<p>blah</p>",
+    "resources": "<p>blah</p>",
+    "attended": 5
+  }
+},
+{
+  "model": "events.eventpage",
+  "pk": 12,
+  "fields": {
+    "date": "2019-09-10",
+    "place": "Water",
+    "agenda": "<p>Stuff</p>",
+    "notes": "<p>Stuff</p>",
+    "resources": "<p>Stuff</p>",
+    "attended": 1
+  }
+},
+{
+  "model": "events.eventpage",
+  "pk": 13,
+  "fields": {
+    "date": "2019-12-11",
+    "place": "Water",
+    "agenda": "<p>Stuff</p>",
+    "notes": "<p>Stuff</p>",
+    "resources": "<p>Stuff</p>",
+    "attended": null
+  }
+},
+{
+  "model": "events.eventpage",
+  "pk": 14,
+  "fields": {
+    "date": "2019-11-05",
+    "place": "OFfice",
+    "agenda": "<p>Stuff</p>",
+    "notes": "<p>Stuff</p>",
+    "resources": "<p>Stuff</p>",
+    "attended": 100
+  }
+},
+{
+  "model": "events.eventpage",
+  "pk": 15,
+  "fields": {
+    "date": "2019-12-25",
+    "place": "Waterfront",
+    "agenda": "",
+    "notes": "",
+    "resources": "",
+    "attended": null
+  }
+},
+{
+  "model": "events.eventpage",
+  "pk": 16,
+  "fields": {
+    "date": "2019-03-11",
+    "place": "There",
+    "agenda": "<p>Stuff</p>",
+    "notes": "",
+    "resources": "",
+    "attended": 12
+  }
+},
+{
+  "model": "events.eventpage",
+  "pk": 17,
+  "fields": {
+    "date": "2019-11-02",
+    "place": "There",
+    "agenda": "",
+    "notes": "",
+    "resources": "",
+    "attended": null
+  }
+},
+{
+  "model": "events.eventindexpage",
+  "pk": 10,
+  "fields": {
+    "intro": "<p>Summary of events</p>"
+  }
+},
+{
+  "model": "home.homepage",
+  "pk": 9,
+  "fields": {
+    "body": "<p>thi sis cipug webpage</p>"
+  }
+}
+]
