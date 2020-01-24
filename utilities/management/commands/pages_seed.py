@@ -9,14 +9,8 @@ import sys
 
 json_directory_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname( __file__ ))))
 
-with open(json_directory_path + r"\legacy_site_data\old_site_data1.json") as f:
+with open(json_directory_path + r"\legacy_site_data\old_site_data.json") as f:
     event_json = json.load(f)
-
-for key in event_json["attended"]:
-    try:
-        event_json["attended"][key] = int(event_json["attended"][key])
-    except:
-        event_json["attended"][key] = 0
 
 class Command(BaseCommand):
     help = 'Seeds the pages'
@@ -34,16 +28,18 @@ class Command(BaseCommand):
             event_index_page = EventIndexPage(
                 title = "Events",
                 intro = "All the CIPUG events",
-                slug = "events",
+                slug = "jersey-events",
             )
             home_page.add_child(instance=event_index_page)
 
             self.stdout.write(self.style.SUCCESS('Event index page created!'))
 
-            number_of_events = 13
+            number_of_events = 8
 
             for n in range(number_of_events):
                 event = Event(
+                    slug = str(n+1),
+                    title = 'Meet up no. {}'.format(str(n+1)),
                     date = event_json["date"][str(n)],
                     place = event_json["place"][str(n)],
                     agenda = event_json["agenda"][str(n)],
@@ -53,6 +49,8 @@ class Command(BaseCommand):
                 )
                 event_index_page.add_child(instance=event) 
                 self.stdout.write(self.style.SUCCESS('Event detail page no. {} created!'.format(str(n))))
+
+            self.stdout.write(self.style.SUCCESS('Woop woop!'))
 
         except:
             self.stdout.write(self.style.ERROR(f'An error occured: \n {sys.exc_info()[0]}\n{sys.exc_info()[1]}'))
