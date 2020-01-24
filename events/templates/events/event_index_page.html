@@ -11,6 +11,7 @@
 
     <div class="intro">{{ page.intro|richtext }}</div>
 
+<<<<<<< HEAD
     {% for event in events %}
         <h2><a href="{% pageurl event %}">{{ event.title }}</a></h2>
         <p>At: {{ event.place }} on {{ event.date }}</p>
@@ -36,5 +37,34 @@
           <li><a href="?page={{ events.next_page_number }}"><i class="fa fa-angle-right"></i></a></li>
         {% endif %}
     </ul>
+=======
+
+
+    {% for event in events  %}
+        {% with event=event.specific %}
+
+        
+
+            <div class="card mt-3">
+  <div class="card-body">
+      {% if today < event.date%}
+          <span class="badge badge-pill badge-success mb-3 p-2">Upcoming</span>
+          {% else %}
+          <span class="badge badge-pill badge-warning mb-3 p-2">Past Event</span>
+          {%endif%}
+    <h5 class="card-title">{{ event.title }}</h5>
+    <p class="card-text"><strong>Date: </strong>{{ event.date }}</p>
+     <p class="card-text"><strong>Location: </strong>{{event.place}}</p>
+    <a href="{% pageurl event %}" class="btn btn-info btn-lg btn-block">More info</a>
+  </div>
+</div>
+
+
+
+
+{%endwith%}
+    {% endfor %}
+
+>>>>>>> upstream/develop
 
 {% endblock %}

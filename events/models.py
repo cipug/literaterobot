@@ -22,6 +22,7 @@ class EventIndexPage(Page):
     ]
 
     def get_context(self, request):
+<<<<<<< HEAD
         context = super(EventIndexPage, self).get_context(request)
 
         # Get all published event pages as a queryset
@@ -40,9 +41,17 @@ class EventIndexPage(Page):
         
         context['events'] = events
 
+=======
+        context = super().get_context(request)
+
+        # Add extra variables and return the updated context
+        context['today'] = date.today()
+        events = self.get_children().live().order_by('-first_published_at')
+        context['events'] = events
+>>>>>>> upstream/develop
         return context
 
-class EventPage(Page):
+class Event(Page):
 
     date = models.DateField("Event date")
     place = models.CharField(max_length=250)
@@ -52,9 +61,10 @@ class EventPage(Page):
     attended = models.IntegerField(blank=True, null=True, help_text="Please enter the number of people that attended, or leave blank")
 
     search_fields = Page.search_fields + [
-        index.SearchField('agenda'),
-        index.SearchField('notes'),
-        index.SearchField('resources'),
+        index.SearchField('agenda', partial_match=True),
+        index.SearchField('notes', partial_match=True),
+        index.SearchField('resources', partial_match=True),
+        index.FilterField('date')
     ]
 
     content_panels = Page.content_panels + [
@@ -67,7 +77,7 @@ class EventPage(Page):
     ]
 
     def get_context(self, request):
-        context = super(EventPage, self).get_context(request)
+        context = super(Event, self).get_context(request)
         context['today'] = date.today()
         return context
 

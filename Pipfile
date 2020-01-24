@@ -5,13 +5,21 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+<<<<<<< HEAD
 ipython = "*"
 django-debug-toolbar = "*"
+=======
+rope = "*"
+>>>>>>> upstream/develop
 
 [packages]
 Django = ">=2.2,<2.3"
 wagtail = "<2.7,>=2.6"
 django-extensions = "==2.2.1"
+markdown2 = "*"
+pandas = "*"
+gunicorn = "*"
+
 
 [requires]
 python_version = "3.7"
