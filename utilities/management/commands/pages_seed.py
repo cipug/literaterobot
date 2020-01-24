@@ -2,14 +2,15 @@ from django.core.management.base import BaseCommand
 from wagtail.core.models import Page
 from events.models import EventIndexPage, Event
 from home.models import HomePage
+from pathlib import Path
 
 import json
 import os
 import sys
 
-json_directory_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname( __file__ ))))
+json_directory_path = Path("legacy_site_data/old_site_data1.json")
 
-with open(json_directory_path + r"\legacy_site_data\old_site_data1.json") as f:
+with open(json_directory_path) as f:
     event_json = json.load(f)
 
 for key in event_json["attended"]:
