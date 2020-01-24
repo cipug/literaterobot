@@ -11,9 +11,7 @@
 
     <div class="intro">{{ page.intro|richtext }}</div>
 
-
-
-    {% for event in events  %}
+{% for event in events  %}
         {% with event=event.specific %}
 
         
@@ -32,11 +30,21 @@
   </div>
 </div>
 
-
-
-
 {%endwith%}
     {% endfor %}
 
+    <ul class="pagination mb-3 mt-3">
+        {% if events.has_previous %}
+          <li><a href="?page={{ events.previous_page_number }}"><i class="fa fa-angle-left"></i></a></li>
+        {% endif %}
+
+        {% for page_num in events.paginator.page_range %}
+          <li {% if page_num == events.number %}class="active"{% endif %}><a href="?page={{ page_num }}">{{ page_num }}</a></li>
+        {% endfor %}
+
+        {% if events.has_next %}
+          <li><a href="?page={{ events.next_page_number }}"><i class="fa fa-angle-right"></i></a></li>
+        {% endif %}
+    </ul>
 
 {% endblock %}
