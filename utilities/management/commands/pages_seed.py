@@ -8,7 +8,7 @@ import json
 import os
 import sys
 
-json_directory_path = Path("legacy_site_data/old_site_data.json")
+json_directory_path = Path("legacy_site_data/old_site_data_events.json")
 
 with open(json_directory_path) as f:
     event_json = json.load(f)
@@ -25,8 +25,12 @@ class Command(BaseCommand):
             home_page.seo_title = "CIPUG home page"
             home_page.save()
     
-            self.stdout.write(self.style.SUCCESS('Home page created!'))
+            self.stdout.write(self.style.SUCCESS('Home page updated!'))
+        
+        except IndexError:
+            self.stdout.write(self.style.ERROR('Home page needs to be created in wagtail admin first'))
 
+        try:
             event_index_page = EventIndexPage(
                 title = "Events",
                 intro = "All the CIPUG events",
@@ -53,6 +57,8 @@ class Command(BaseCommand):
                 self.stdout.write(self.style.SUCCESS('Event detail page no. {} created!'.format(str(n))))
 
             self.stdout.write(self.style.SUCCESS('Woop woop!'))
+            
 
         except:
             self.stdout.write(self.style.ERROR(f'An error occured: \n {sys.exc_info()[0]}\n{sys.exc_info()[1]}'))
+            
