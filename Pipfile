@@ -55,6 +55,7 @@ Pillow = "==6.2.1"
 Pygments = "==2.4.2"
 Unidecode = "==1.1.1"
 Willow = "==1.1"
+psycopg2 = "*"
 pathlib = "*"
 
 [requires]
