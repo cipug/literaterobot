@@ -27,7 +27,7 @@ class EventIndexPage(Page):
         # Get all published event pages as a queryset
         all_event_pages = Event.objects.live().order_by('-date')   # or ('-first_published_at')?
 
-        paginator = Paginator(all_event_pages, 3) # show 3 events per page
+        paginator = Paginator(all_event_pages, 5) # show 5 events per page
 
         page = request.GET.get('page')
 

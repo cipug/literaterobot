@@ -18,6 +18,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         try:
+            print('getting home')
             home_page = HomePage.objects.all()[0]
             home_page.title = "CIPUG home page"
             home_page.body = "Hello from the Channel Island Python User Group"
