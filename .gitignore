@@ -18,3 +18,8 @@ Pipfile.lock
 \.vscode/
 db.sqlite3
 *checkpoint.ipynb
+
+pg_notes.txt
+.gitignore
+.gitignore
+legacy_site_data/Jupyter-Workflow1.ipynb
