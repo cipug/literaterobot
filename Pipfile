@@ -59,6 +59,3 @@ psycopg2 = "*"
 pathlib = "*"
 django-toolbelt = "*"
 whitenoise = "*"
-
-[requires]
-python_version = "3.7"

@@ -13,7 +13,6 @@ __pycache__
 .vagrant/
 /.vagrant/
 /Vagrantfile.local
-Pipfile.lock
 
 \.vscode/
 db.sqlite3
