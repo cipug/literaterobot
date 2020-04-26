@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-eventpage{% endblock %}
+
+{% block content %}
+    <h1>{{ page.title }}</h1>
+    <p class="meta">Date: {{ page.date }}</p>
+
+    <div class="place">
+        <h2>Place</h2>
+        {{ page.place }}
+    </div>
+
+    {% if page.attended %}
+
+    <div class="attended">
+        <h2>No. attended </h2>
+        {{ page.attended }}
+    </div>
+    {% endif %}
+
+
+    <div class="agenda">
+        <h2>Agenda</h2>
+        {{ page.agenda|richtext }}
+    </div>
+
+    {% if page.date < today %}  
+        {% if page.notes %}
+            <h2>Notes</h2> {{ page.notes|richtext }}
+        {% else %} 
+            <h2>Notes</h2> Notes to follow.  
+        {% endif %}
+    {% endif %}
+    
+    {% if page.resources %}
+        <h2>Resources</h2> {{ page.resources|richtext }}
+    {% endif %}    
+    
+    <p><a href="{{ page.get_parent.url }}">Return to events list</a></p>
+
+{% endblock %}

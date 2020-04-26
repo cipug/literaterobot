@@ -13,4 +13,7 @@ __pycache__
 .vagrant/
 /.vagrant/
 /Vagrantfile.local
-!.gitignore
+
+\.vscode/
+db.sqlite3
+*checkpoint.ipynb

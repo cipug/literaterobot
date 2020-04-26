@@ -1,21 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
+{% load wagtailcore_tags %}
 
 {% block body_class %}template-homepage{% endblock %}
-
-{% block extra_css %}
-
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
-{% endblock extra_css %}
-
 {% block content %}
 
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-{% include 'home/welcome_page.html' %}
 
-{% endblock content %}
+    <div class="jumbotron pb-4">
+        <h1 class="display-4">Channel Islands' Python User Group</h1>
+        <p class="lead">Currently an unratified group but the aim is to cover Python development across the Channel Islands.</p>
+        <hr class="my-4">
+        <p>We aim to meet once a month in an informal setting. The aim of the meet-ups is to meet like minded people using Python in any form.</p>
+        <a class="btn btn-primary btn-lg mt-3" href="/jersey-events" role="button">Upcoming Events</a>
+    </div>
+
+{% endblock %}

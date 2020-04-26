@@ -1,0 +1,30 @@
+= 2019-02-21 Initial Jersey Meetup =
+
+17:30 Digital Jersey Hub - Edison Room (the board room)
+
+== Notes ==
+
+4 attendees.
+
+General introductions and summary of Python experience to date.
+
+Lack of visible Python activity compared to other cities / locations
+
+Discussion of education - Scratch & Python. Agreement that, once established, the UG should look to assist & enable Python in education where possible.
+
+Quick chat on architectural patterns and how to structure our applications.
+
+Agreement that the UG should be kept quite informal, with presentations / speakers being exceptional events.
+
+== Resources ==
+
+ * [[https://mode.com/|Mode.com]]
+ * [[https://developers.google.com/web/tools/lighthouse/|Google Lighthouse]]
+ * [[https://wiki.qt.io/Qt_for_Python|Pyside 2.0]]
+ * [[https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x|Harvard CS50]]
+ * [[http://pythontutor.com/|Pythontutor.com]]
+ * [[https://codingbat.com/python|Codingbat.com]]
+ * Redis
+ * Dynamo DB
+
+Next meetup - TBD
