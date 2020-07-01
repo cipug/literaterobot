@@ -1,0 +1,98 @@
+html,body{
+    width:100%
+}
+
+
+nav{
+    border-bottom: 4px solid rgb(150, 150, 150);
+    
+}
+
+.content{
+    min-height: 70vh;
+}
+
+footer{
+    background-color: #343a40;
+    border-top: 4px solid rgb(150,150, 150);
+    color: whitesmoke;
+}
+
+footer h4{
+    color: rgba(255,255,255,.5);
+}
+
+footer .col-sm{
+    padding:0px  50px;
+    text-align: justify ;
+}
+.contact-details{
+    list-style: none;
+    padding:0;
+}
+
+.dark > li{
+    background-color: #343a40;
+    border: 1px solid rgb(150,150, 150);
+    color: whitesmoke;
+    width:25rem;
+    padding:0;
+}
+footer a{
+    color: whitesmoke;
+}
+footer a:hover{
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+
+.list-group-item.active{
+    background-color: #343a40;
+    border-color:rgb(150,150, 150);
+    color:#28a745;
+
+}
+footer .list-group-item.active a{
+
+    color:#28a745;
+
+}
+.sitemap{
+    display:inline;
+}
+
+.footer-sitemap li{
+    display:inline-block;
+}
+
+.footer-sitemap ul {
+   padding:0;
+}
+
+.footer-sitemap a{
+    color: rgba(255,255,255,.5);
+}
+.footer-sitemap a:hover{
+    color: rgba(255, 255, 255, 0.81);
+}
+
+
+@media only screen and (max-width:900px){
+    .search-bar{
+        
+        padding-top:20px;
+        border-top: 1px solid rgb(150, 150, 150);
+    }
+
+    .dark > li{
+
+    width:100%;
+}
+footer .col-sm{
+padding: 0px 0px;
+margin-top:20px;
+}
+.footer-sitemap{
+    flex-direction: column;
+}
+}
