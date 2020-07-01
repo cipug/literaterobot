@@ -6,17 +6,17 @@ verify_ssl = true
 [dev-packages]
 pylint = "*"
 ipython = "*"
-django-debug-toolbar = "*"
 rope = "*"
 
 [packages]
 wagtail = "*"
 Django = "*"
+django-extensions = "*"
+django-debug-toolbar = "*"
+django-toolbelt = "*"
 gunicorn = "*"
 psycopg2 = "*"
-django-toolbelt = "*"
 whitenoise = "*"
-django-extensions = "*"
 
 [requires]
 python_version = "3.8"
