@@ -10,7 +10,7 @@ django-debug-toolbar = "*"
 rope = "*"
 
 [packages]
-Django = "==2.2.10"
+Django = "==2.2.13"
 wagtail = "==2.6.3"
 django-extensions = "==2.2.1"
 markdown2 = "*"
