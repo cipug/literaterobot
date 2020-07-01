@@ -35,15 +35,15 @@
   <nav aria-label="Page navigation example">
     <ul class="pagination">
       {% if events.has_previous %}
-        <li class="page-item"><a href="?page={{ events.previous_page_number }}"><i class="fa fa-angle-left"></i></a></li>
+        <li class="page-item"><a class="page-link" href="?page={{ events.previous_page_number }}"><i class="fa fa-angle-left"></i></a></li>
       {% endif %}
 
       {% for page_num in events.paginator.page_range %}
-        <li  class="page-item {% if page_num == events.number %}active{% endif %}""><a href="?page={{ page_num }}">{{ page_num }}</a></li>
+        <li  class="page-item {% if page_num == events.number %}active{% endif %}""><a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a></li>
       {% endfor %}
 
       {% if events.has_next %}
-        <li class="page-item"><a href="?page={{ events.next_page_number }}"><i class="fa fa-angle-right"></i></a></li>
+        <li class="page-item"><a class="page-link" href="?page={{ events.next_page_number }}"><i class="fa fa-angle-right"></i></a></li>
       {% endif %}
     </ul>
   </nav>
